@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Maraschino Liqueur</title>
+
+<style>
+
+body{
+background-image:url("17805296327137108206079971414293.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+height:100vh;
+margin:0;
+padding:30px;
+
+font-family:Arial;
+}
+
+.hero{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+max-width:900px;
+}
+
+h1{
+color:#f5d76e;
+font-size:48px;
+text-shadow:
+3px 3px 0 black,
+6px 6px 10px black;
+}
+
+h2{
+color:#f5d76e;
+}
+
+p{
+color:white;
+font-size:18px;
+line-height:1.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>🍒 Maraschino Liqueur</h1>
+
+<h2>Thông tin cơ bản</h2>
+
+<p>Phân loại: Fruit Liqueur</p>
+
+<p>Nồng độ cồn: 24% - 32%</p>
+
+<p>Xuất xứ: Croatia / Ý</p>
+
+<h2>Thành phần chính</h2>
+
+<p>Quả Marasca Cherry</p>
+
+<p>Hạt cherry</p>
+
+<p>Rượu nền trung tính</p>
+
+<p>Đường</p>
+
+<p>Nước</p>
+
+<h2>Phương pháp sản xuất</h2>
+
+<p>
+Toàn bộ quả Marasca Cherry,
+bao gồm cả hạt,
+được nghiền và lên men.
+</p>
+
+<p>
+Sau đó được chưng cất để thu nhận
+hương thơm đặc trưng của quả và nhân hạt.
+</p>
+
+<p>
+Rượu được phối trộn với đường
+và ủ trước khi đóng chai.
+</p>
+
+<h2>Hương vị</h2>
+
+<p>
+Cherry khô,
+hạnh nhân,
+hoa trắng,
+cam quýt nhẹ
+và hậu vị thanh.
+</p>
+
+<h2>Câu chuyện lịch sử</h2>
+
+<p>
+Maraschino Liqueur có nguồn gốc từ vùng Dalmatia
+thuộc Croatia ngày nay.
+</p>
+
+<p>
+Từng là loại liqueur được giới quý tộc châu Âu
+ưa chuộng trong nhiều thế kỷ.
+</p>
+
+<p>
+Luxardo là thương hiệu nổi tiếng nhất
+của dòng Maraschino hiện nay.
+</p>
+
+<h2>Văn hóa</h2>
+
+<p>
+Nếu Chartreuse nổi tiếng vì 130 loại thảo mộc,
+thì Maraschino nổi tiếng vì sử dụng cả hạt cherry,
+tạo nên hương hạnh nhân đặc trưng.
+</p>
+
+<h2>Cocktail nổi tiếng</h2>
+
+<p>Aviation</p>
+
+<p>Last Word</p>
+
+<p>Hemingway Daiquiri</p>
+
+<p>Martinez</p>
+
+<h2>Điểm cần nhớ cho Bartender</h2>
+
+<p>
+Maraschino không ngọt kiểu syrup cherry.
+</p>
+
+<p>
+Đây là một liqueur phức tạp,
+có vị cherry khô và hương hạnh nhân rõ rệt.
+</p>
+
+<p>
+Chỉ cần 5 - 15ml cũng đủ thay đổi
+cấu trúc hương vị của cocktail.
+</p>
+
+</div>
+
+</body>
+
+</html>
