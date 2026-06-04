@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<meta charset="UTF-8">
+<title>Cointreau</title>
+</head>
+
+<body>
+
+<h1>Cointreau</h1>
+
+<h2>Thông tin cơ bản</h2>
+
+<p>Phân loại: Triple Sec</p>
+
+<p>Nồng độ cồn: 40% ABV</p>
+
+<p>Xuất xứ: Pháp</p>
+
+<h2>Thành phần chính</h2>
+
+<p>Vỏ cam ngọt</p>
+
+<p>Vỏ cam đắng</p>
+
+<p>Rượu nền trung tính</p>
+
+<p>Nước</p>
+
+<p>Đường</p>
+
+<h2>Phương pháp sản xuất</h2>
+
+<p>
+Vỏ cam ngọt và vỏ cam đắng được lựa chọn
+từ nhiều vùng khác nhau trên thế giới.
+</p>
+
+<p>
+Vỏ cam được ngâm trong rượu nền trung tính
+để chiết xuất tinh dầu và hương thơm.
+</p>
+
+<p>
+Hỗn hợp sau đó được chưng cất trong nồi đồng
+để thu được hương cam tinh khiết.
+</p>
+
+<p>
+Cuối cùng được pha loãng bằng nước tinh khiết
+để đạt nồng độ 40% ABV.
+</p>
+
+<h2>Hương vị</h2>
+
+<p>
+Hương cam tươi rõ nét,
+vị ngọt cân bằng với chút đắng nhẹ,
+hậu vị sạch và kéo dài.
+</p>
+
+<h2>Cocktail nổi tiếng</h2>
+
+<p>Margarita</p>
+
+<p>Cosmopolitan</p>
+
+<p>Sidecar</p>
+
+<p>White Lady</p>
+
+</body>
+
+</html>
