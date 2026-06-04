@@ -15,34 +15,80 @@ background-repeat:no-repeat;
 
 height:100vh;
 margin:0;
-padding:30px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-family:Arial;
 }
 
 .hero{
+
 background:rgba(0,0,0,0.45);
-padding:20px;
-border-radius:15px;
-display:inline-block;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+width:80%;
+max-width:500px;
 }
 
 h1{
+
 color:#f5d76e;
-font-size:52px;
+
+font-size:48px;
+
 font-weight:bold;
 
 text-shadow:
 3px 3px 0 black,
 6px 6px 10px black;
 
-letter-spacing:2px;
-
 margin-top:0;
 }
 
 p{
+
 color:white;
-font-size:20px;
+
+font-size:18px;
+
 text-shadow:2px 2px 5px black;
+}
+
+input{
+
+width:80%;
+
+padding:12px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:10px;
+
+margin-top:10px;
+}
+
+button{
+
+padding:12px 20px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:10px;
+
+margin-top:10px;
+
+cursor:pointer;
 }
 
 </style>
@@ -57,9 +103,47 @@ text-shadow:2px 2px 5px black;
 
 <p>Chào mừng Pazjval!</p>
 
-<p>Kiến thức về rượu trong quán Chapter 28.</p>
+<p>Nhập tên loại rượu để tra cứu.</p>
+
+<input
+id="searchBox"
+type="text"
+placeholder="Ví dụ: Campari">
+
+<br>
+
+<button onclick="searchDrink()">
+Tìm kiếm
+</button>
 
 </div>
+
+<script>
+
+function searchDrink(){
+
+let keyword =
+document
+.getElementById("searchBox")
+.value
+.toLowerCase();
+
+if(keyword=="campari"){
+
+window.location.href=
+"campari.html";
+
+}
+
+else{
+
+alert("Chưa có dữ liệu về loại rượu này");
+
+}
+
+}
+
+</script>
 
 </body>
 
