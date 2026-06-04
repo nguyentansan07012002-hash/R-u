@@ -8,113 +8,111 @@
 <style>
 
 body{
+margin:0;
+padding:0;
+
 background-image:url("17805296327137108206079971414293.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
+background-attachment:fixed;
 
-height:100vh;
-margin:0;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-family:Arial;
+font-family:Arial,sans-serif;
 }
 
-.hero{
+.overlay{
+width:100%;
+height:100vh;
 
 background:rgba(0,0,0,0.45);
 
-padding:30px;
-
-border-radius:20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 
 text-align:center;
-
-width:80%;
-max-width:500px;
 }
 
 h1{
-
-color:#f5d76e;
-
-font-size:48px;
-
-font-weight:bold;
+color:white;
+font-size:50px;
 
 text-shadow:
-3px 3px 0 black,
-6px 6px 10px black;
-
-margin-top:0;
+3px 3px 0 #000,
+6px 6px 12px #000;
 }
 
 p{
-
 color:white;
+font-size:22px;
 
-font-size:18px;
+text-shadow:
+2px 2px 5px black;
+}
 
-text-shadow:2px 2px 5px black;
+.search-box{
+width:80%;
+max-width:500px;
+margin-top:30px;
 }
 
 input{
+width:100%;
+padding:15px;
 
-width:80%;
-
-padding:12px;
-
-font-size:18px;
+font-size:20px;
 
 border:none;
-
-border-radius:10px;
-
-margin-top:10px;
-}
-
-button{
-
-padding:12px 20px;
-
-font-size:18px;
-
-border:none;
-
-border-radius:10px;
-
-margin-top:10px;
-
-cursor:pointer;
+border-radius:15px;
+outline:none;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="hero">
+<div class="overlay">
 
 <h1>🍸 Học rượu quán Chapter 28</h1>
 
 <p>Chào mừng Pazjval!</p>
 
-<p>Nhập tên loại rượu để tra cứu.</p>
+<p>Kiến thức rượu trong quán Chapter 28.</p>
+
+<div class="search-box">
 
 <input
-id="searchBox"
-type="text"
-placeholder="Ví dụ: Campari">
+list="ruou"
+id="search"
+placeholder="Pazjval"
+onchange="searchDrink()"
+>
 
-<br>
+<datalist id="ruou">
 
-<button onclick="searchDrink()">
-Tìm kiếm
-</button>
+<option value="Campari">
+<option value="Cointreau">
+<option value="Midori">
+<option value="Ricard">
+<option value="Chartreuse Green">
+<option value="Benedictine">
+<option value="Kahlua">
+<option value="Malibu">
+<option value="Amaretto">
+<option value="Bailey">
+<option value="Cherry Brandy">
+<option value="Blue Curacao">
+<option value="Strawberry">
+<option value="Absinthe">
+<option value="Creme de Violet">
+<option value="Creme de Maraschino">
+<option value="Creme de Cacao">
+
+</datalist>
+
+</div>
 
 </div>
 
@@ -123,22 +121,76 @@ Tìm kiếm
 function searchDrink(){
 
 let keyword =
-document
-.getElementById("searchBox")
+document.getElementById("search")
 .value
 .toLowerCase();
 
 if(keyword=="campari"){
-
-window.location.href=
-"campari.html";
-
+window.location.href="campari.html";
 }
 
-else{
+else if(keyword=="cointreau"){
+window.location.href="Cointreau.html";
+}
 
-alert("Chưa có dữ liệu về loại rượu này");
+else if(keyword=="midori"){
+window.location.href="Midori.html";
+}
 
+else if(keyword=="ricard"){
+window.location.href="Ricard.html";
+}
+
+else if(keyword=="chartreuse green"){
+window.location.href="ChartreuseGreen.html";
+}
+
+else if(keyword=="benedictine"){
+window.location.href="Benedictine.html";
+}
+
+else if(keyword=="kahlua"){
+window.location.href="Kalua.html";
+}
+
+else if(keyword=="malibu"){
+window.location.href="Malibu.html";
+}
+
+else if(keyword=="amaretto"){
+window.location.href="Amaretto.html";
+}
+
+else if(keyword=="bailey"){
+window.location.href="Bailey.html";
+}
+
+else if(keyword=="cherry brandy"){
+window.location.href="Cherrybrandy.html";
+}
+
+else if(keyword=="blue curacao"){
+window.location.href="Bluecuracao.html";
+}
+
+else if(keyword=="strawberry"){
+window.location.href="Strawberry.html";
+}
+
+else if(keyword=="absinthe"){
+window.location.href="Absinthe.html";
+}
+
+else if(keyword=="creme de violet"){
+window.location.href="Creamdeviolet.html";
+}
+
+else if(keyword=="creme de maraschino"){
+window.location.href="Creamdemaraschino.html";
+}
+
+else if(keyword=="creme de cacao"){
+window.location.href="Creamdecacao.html";
 }
 
 }
