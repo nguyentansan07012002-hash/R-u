@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
 <title>Spirit Pocket</title>
@@ -10,193 +9,266 @@
 body{
 margin:0;
 padding:0;
+height:100vh;
 
 background-image:url("17805296327137108206079971414293.jpg");
 background-size:cover;
 background-position:center;
-background-repeat:no-repeat;
 background-attachment:fixed;
 
 font-family:Arial,sans-serif;
-}
-
-.overlay{
-width:100%;
-height:100vh;
-
-background:rgba(0,0,0,0.45);
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
+color:white;
 text-align:center;
 }
 
-h1{
-color:white;
-font-size:50px;
+.overlay{
+background:rgba(0,0,0,0.45);
+min-height:100vh;
+padding-top:80px;
+}
 
-text-shadow:
-3px 3px 0 #000,
-6px 6px 12px #000;
+h1{
+font-size:50px;
+text-shadow:3px 3px 10px black;
+margin-bottom:10px;
 }
 
 p{
-color:white;
 font-size:22px;
-
-text-shadow:
-2px 2px 5px black;
+text-shadow:2px 2px 6px black;
 }
 
 .search-box{
+margin:30px auto;
 width:80%;
 max-width:500px;
-margin-top:30px;
 }
 
 input{
 width:100%;
 padding:15px;
-
-font-size:20px;
-
+font-size:18px;
 border:none;
-border-radius:15px;
-outline:none;
+border-radius:10px;
+}
+
+button{
+margin-top:10px;
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
 }
 
 </style>
-</head>
-
-<body>
-
-<div class="overlay">
-
-<h1>🍸 Học rượu quán Chapter 28</h1>
-
-<p>Chào mừng Pazjval!</p>
-
-<p>Kiến thức rượu trong quán Chapter 28.</p>
-
-<div class="search-box">
-
-<input
-list="ruou"
-id="search"
-placeholder="Pazjval"
-onchange="searchDrink()"
->
-
-<datalist id="ruou">
-
-<option value="Campari">
-<option value="Cointreau">
-<option value="Midori">
-<option value="Ricard">
-<option value="Chartreuse Green">
-<option value="Benedictine">
-<option value="Kahlua">
-<option value="Malibu">
-<option value="Amaretto">
-<option value="Bailey">
-<option value="Cherry Brandy">
-<option value="Blue Curacao">
-<option value="Strawberry">
-<option value="Absinthe">
-<option value="Creme de Violet">
-<option value="Creme de Maraschino">
-<option value="Creme de Cacao">
-
-</datalist>
-
-</div>
-
-</div>
 
 <script>
 
-function searchDrink(){
+function searchBaseSpirit(){
 
-let keyword =
-document.getElementById("search")
-.value
-.toLowerCase();
+let value =
+document.getElementById("baseSpirit").value.toLowerCase();
 
-if(keyword=="campari"){
-window.location.href="campari.html";
+const pages = {
+
+"jim beam":"Jimbeam.html",
+"jack daniels":"Jackdaniels.html",
+"wild turkey 101":"Wildturkey101.html",
+"maker mark":"Makermark.html",
+"bullet rye":"Bulletrye.html",
+
+"glenlivet":"Glenlivet.html",
+"drambuie":"Drambuie.html",
+"chivas regal 12":"Chivas.html",
+"teacher":"Teacher.html",
+"johnnie walker double black":"Doubleblack.html",
+"the ileach":"Theileach.html",
+
+"jameson":"Jameson.html",
+"bailey":"Bailey.html",
+
+"suntory":"Suntory.html",
+
+"gordon":"Gordon.html",
+"tanqueray":"Tanqueray.html",
+"roku":"Roku.html",
+"hendrick":"Hendrick.html",
+
+"bacardi white":"Barcadiwhite.html",
+"havana club":"Havana.html",
+"captain morgan dark":"Darkrum.html",
+
+"absolut":"Absolut.html",
+"tito":"Tito.html",
+
+"sauza":"Sauza.html",
+"jose cuervo":"Jose.html",
+"don julio":"Donjulio.html",
+
+"martell":"Martell.html"
+
+};
+
+if(pages[value]){
+window.location.href=pages[value];
+}else{
+alert("Không tìm thấy chai rượu");
 }
 
-else if(keyword=="cointreau"){
-window.location.href="Cointreau.html";
 }
 
-else if(keyword=="midori"){
-window.location.href="Midori.html";
-}
+function searchLiqueur(){
 
-else if(keyword=="ricard"){
-window.location.href="Ricard.html";
-}
+let value =
+document.getElementById("liqueur").value.toLowerCase();
 
-else if(keyword=="chartreuse green"){
-window.location.href="ChartreuseGreen.html";
-}
+const pages = {
 
-else if(keyword=="benedictine"){
-window.location.href="Benedictine.html";
-}
+"campari":"campari.html",
+"midori":"Midori.html",
+"cointreau":"Cointreau.html",
+"amaretto":"Amaretto.html",
+"ricard":"Ricard.html",
 
-else if(keyword=="kahlua"){
-window.location.href="Kalua.html";
-}
+"chartreuse":"ChartreuseGreen.html",
+"absinthe":"Absinthe.html",
+"creme de violet":"Creamdeviolet.html",
+"creme de maraschino":"Creamdemaraschino.html",
+"creme de cacao":"Creamdecacao.html",
 
-else if(keyword=="malibu"){
-window.location.href="Malibu.html";
-}
+"kalua":"Kalua.html",
+"benedictine":"Benedictine.html",
+"malibu":"Malibu.html",
+"cherry brandy":"Cherrybrandy.html",
+"blue curacao":"Bluecuracao.html",
+"strawberry":"Strawberry.html",
 
-else if(keyword=="amaretto"){
-window.location.href="Amaretto.html";
-}
+"drambuie":"Drambuie.html",
+"bailey":"Bailey.html"
 
-else if(keyword=="bailey"){
-window.location.href="Bailey.html";
-}
+};
 
-else if(keyword=="cherry brandy"){
-window.location.href="Cherrybrandy.html";
-}
-
-else if(keyword=="blue curacao"){
-window.location.href="Bluecuracao.html";
-}
-
-else if(keyword=="strawberry"){
-window.location.href="Strawberry.html";
-}
-
-else if(keyword=="absinthe"){
-window.location.href="Absinthe.html";
-}
-
-else if(keyword=="creme de violet"){
-window.location.href="Creamdeviolet.html";
-}
-
-else if(keyword=="creme de maraschino"){
-window.location.href="Creamdemaraschino.html";
-}
-
-else if(keyword=="creme de cacao"){
-window.location.href="Creamdecacao.html";
+if(pages[value]){
+window.location.href=pages[value];
+}else{
+alert("Không tìm thấy chai rượu");
 }
 
 }
 
 </script>
 
-</body>
+</head>
 
+<body>
+
+<div class="overlay">
+
+<h1>🍸 Spirit Pocket</h1>
+
+<p>Học rượu quán Chapter 28</p>
+
+<div class="search-box">
+
+<h2>Rượu nền</h2>
+
+<input
+list="baseSpirits"
+id="baseSpirit"
+placeholder="Tìm rượu nền...">
+
+<datalist id="baseSpirits">
+
+<option value="Jim Beam">
+<option value="Jack Daniels">
+<option value="Wild Turkey 101">
+<option value="Maker Mark">
+<option value="Bullet Rye">
+
+<option value="Glenlivet">
+<option value="Drambuie">
+<option value="Chivas Regal 12">
+<option value="Teacher">
+<option value="Johnnie Walker Double Black">
+<option value="The Ileach">
+
+<option value="Jameson">
+<option value="Suntory">
+
+<option value="Gordon">
+<option value="Tanqueray">
+<option value="Roku">
+<option value="Hendrick">
+
+<option value="Bacardi White">
+<option value="Havana Club">
+<option value="Captain Morgan Dark">
+
+<option value="Absolut">
+<option value="Tito">
+
+<option value="Sauza">
+<option value="Jose Cuervo">
+<option value="Don Julio">
+
+<option value="Martell">
+
+</datalist>
+
+<button onclick="searchBaseSpirit()">
+Tìm kiếm
+</button>
+
+</div>
+
+<div class="search-box">
+
+<h2>Rượu mùi</h2>
+
+<input
+list="liqueurs"
+id="liqueur"
+placeholder="Tìm rượu mùi...">
+
+<datalist id="liqueurs">
+
+<option value="Campari">
+<option value="Midori">
+<option value="Cointreau">
+<option value="Amaretto">
+<option value="Ricard">
+
+<option value="Chartreuse">
+<option value="Absinthe">
+
+<option value="Creme de Violet">
+<option value="Creme de Maraschino">
+<option value="Creme de Cacao">
+
+<option value="Kalua">
+<option value="Benedictine">
+<option value="Malibu">
+
+<option value="Cherry Brandy">
+<option value="Blue Curacao">
+<option value="Strawberry">
+
+<option value="Bailey">
+
+</datalist>
+
+<button onclick="searchLiqueur()">
+Tìm kiếm
+</button>
+
+</div>
+
+</div>
+
+</body>
 </html>
